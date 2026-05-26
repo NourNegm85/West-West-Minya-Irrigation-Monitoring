@@ -198,7 +198,7 @@ aquifer stress.
 
 ├── figures/           Five key figures at 300 DPI
 
-├── docs/              Full verified reference list
+├── docs/              Full reference list
 
 └── requirements.txt   Python environment specification
 
