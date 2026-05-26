@@ -92,6 +92,7 @@ in that season. Dashed lines mark the FAO reference range. Not a single
 pivot-season fell below the lower benchmark.*
 
 **Why did productivity appear to drop in 2022/23?**
+
 It was not a real drop — it was a dilution effect. Active pivot count doubled
 from 45 to 97 in that season. The 52 newly commissioned fields performed at
 lower efficiency in their first season, which is normal and expected for newly
