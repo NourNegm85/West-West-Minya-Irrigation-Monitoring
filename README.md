@@ -106,7 +106,7 @@ management signal, not a failure signal.
 
 ## Where Are the Most and Least Efficient Fields?
 
-![Spatial WPb Grid](figures/spatial_wpb_4season_grid.png)
+![Spatial WPb Grid](figures/spatial_wpb_4_season_grid.png)
 
 *Each panel shows one season. Active pivots are colored from red (lower
 efficiency) to green (higher efficiency). Inactive pivots are shown in grey.
