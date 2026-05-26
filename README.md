@@ -235,6 +235,6 @@ For commercial licensing or consulting inquiries, contact the author via LinkedI
 
 <div align="center">
 
-*Author: Nour · Remote Sensing & Agricultural Water Management · Egypt · 2026*
+*Author:Nour Negm · PhD | Plant Genetics & Breeding | Remote Sensing & Data Analytics for Agriculture & Water | Egypt–MENA · Egypt · 2026*
 
 </div>
