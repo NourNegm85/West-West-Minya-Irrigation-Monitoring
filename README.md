@@ -229,7 +229,7 @@ provided you credit the author.
 **You may not** use this work or any part of its methodology for commercial,
 industrial, or for-profit purposes without explicit written permission.
 
-For commercial licensing or consulting inquiries, contact the author via LinkedIn.
+For commercial licensing or consulting inquiries, contact the author via LinkedIn https://www.linkedin.com/in/nour-ibrahim/.
 
 ---
 
