@@ -191,10 +191,15 @@ aquifer stress.
 ---
 
 ## Repository Contents
+
 ├── notebook/          Full analysis — one self-contained notebook
+
 ├── data/              Six CSV files with all results
+
 ├── figures/           Five key figures at 300 DPI
+
 ├── docs/              Full verified reference list
+
 └── requirements.txt   Python environment specification
 
 ---
