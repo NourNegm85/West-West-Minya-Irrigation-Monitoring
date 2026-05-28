@@ -115,9 +115,10 @@ lower efficiency in their first season, which is normal and expected for newly
 reclaimed land. By 2023/24 the cluster had largely recovered. This is a
 management signal, not a failure signal.
 
-> No crop-type field data was available. Results assume a winter cereal-dominant
-> system (wheat or barley), consistent with the November–April growing calendar
-> and observed phenological patterns.
+> No satellite-based crop classification performed. Field knowledge indicates
+sugar beet as dominant crop, with wheat, clover, and other winter cultivars
+as secondary. Brackish irrigation water (TDS 2,176–2,912 mg/L) supports
+salt-tolerant crop dominance (Khalil et al., 2024).
 
 ---
 
@@ -178,10 +179,14 @@ Demand grew by **110%** over four seasons — driven almost entirely by
 area expansion, not by increased water use per field. Mean water consumption
 per active pivot remained relatively stable.
 
-The Nubian Sandstone Aquifer underlying this zone is a fossil resource that
-receives virtually no modern recharge (Gossel et al., 2004). The growth
-trajectory documented here is a direct and measurable signal of increasing
-aquifer stress.
+The primary water source is the **Middle Eocene fractured limestone aquifer**,
+a confined to semi-confined brackish system (TDS 2,176–2,912 mg/L) under
+accelerating stress. Regional studies document a **5-meter water table decline
+in a single year** (2020–2021) driven by agricultural expansion (Alsayyad
+et al., 2024), and water quality deteriorated from "Good" to "Poor" between
+2016 and 2024 (Shams et al., 2025). The abstraction trajectory documented
+in this project — a 110% demand increase over four seasons — is a direct
+and measurable contribution to that depletion trend.
 
 ---
 
