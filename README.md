@@ -217,16 +217,13 @@ and measurable contribution to that depletion trend.
 
 ## Repository Contents
 
+```text
 ├── notebook/          Full analysis — one self-contained notebook
-
 ├── data/              Six CSV files with all results
-
 ├── figures/           Five key figures at 300 DPI
-
 ├── docs/              Full reference list
-
 └── requirements.txt   Python environment specification
-
+```
 ---
 ## References
 
