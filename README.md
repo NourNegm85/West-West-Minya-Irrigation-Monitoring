@@ -211,7 +211,7 @@ and measurable contribution to that depletion trend.
 | FAO WaPOR v3 | L3-AETI-D | 20m / 10-day | Actual water consumption |
 | FAO WaPOR v3 | L3-NPP-D | 20m / 10-day | Biomass production |
 | FAO WaPOR | PCP Level 1 | ~5km → aligned to 20m | Precipitation input |
-| Sentinel-2 L2A | Band 4 + Band 8 | 10m | SAVI activity classification |
+| Sentinel-2 L2A | Band 4 + Band 8 | 10m  aligned to 20m | SAVI activity classification |
 
 ---
 
