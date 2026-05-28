@@ -33,7 +33,10 @@ All analyses were conducted using open satellite data and Python-based geospatia
 *West West Minya reclamation zone, West Minya Governorate, Egypt.
 166 center-pivot irrigation systems mapped from Sentinel-2 satellite imagery.
 The cluster draws groundwater from the **Middle Eocene fractured limestone
-aquifer**.
+aquifer** (well depths 420–750m), which is under accelerating stress —
+regional studies document a 5-meter water table decline in a single year
+(Alsayyad et al., 2024) and deteriorating water quality between 2016 and
+2024 (Shams et al., 2025).
 Basemap: Esri World Imagery.*
 
 ---
