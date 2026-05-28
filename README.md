@@ -150,9 +150,12 @@ What the curves tell us:
 
 - Water consumption rises steadily through the season, peaking in
   **March–April** as crops reach full canopy and temperatures increase.
-- Biomass production peaks at **March–mid April** — consistent with the
-  grain-fill and maturation stage of winter cereals in Upper Egypt
-  (Steduto et al., 2012).
+- NPP peaks at dekads 13–16 (March–mid April), consistent with the storage
+  root bulking and canopy maturation of sugar beet — the dominant crop in
+  this cluster — followed by wheat, clover, and other winter cultivars.
+  The brackish irrigation water (TDS 2,176–2,912 mg/L) constrains crop
+  selection toward salt-tolerant species such as sugar beet
+  (Khalil et al., 2024; Steduto et al., 2012).
 - The 2021/22 season starts 30 days later than all other years. This likely
   reflects mid-season monitoring onset rather than a late planting year.
   Seasonal totals for 2021/22 are therefore not directly comparable to later
