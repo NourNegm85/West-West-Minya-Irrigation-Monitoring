@@ -208,17 +208,18 @@ aquifer stress.
 
 Full formatted list with DOIs: [`docs/references.md`](docs/references.md)
 
-1. Allen et al. (1998) — FAO-56
-2. FAO (2023) — WaPOR v3 Methodology
-3. Huete (1988) — SAVI
-4. IHE Delft (2020) — WaPOR Water Productivity
-5. Khalil et al. (2024) — Eocene carbonate aquifer, West Al-Minya [NEW]
-6. Mann (1945) — Econometrica
-7. Morsy (2023) — MODFLOW, West-West Minya [NEW — names your exact site]
-8. Sen (1968) — JASA
-9. Steduto et al. (2012) — FAO-66, crop water relations including sugar beet
-10. Zwart & Bastiaanssen (2004) — Water productivity benchmarks
 
+- Allen et al. (1998) — FAO Irrigation and Drainage Paper 56
+- Alsayyad et al. (2024) — Geology and agricultural impact, West Minia
+- FAO (2023) — WaPOR Database Methodology v3
+- Huete (1988) — SAVI · *Remote Sensing of Environment*
+- IHE Delft (2020) — Water Productivity and Water Accounting using WaPOR
+- Khalil et al. (2024) — Eocene carbonate aquifer, West Al-Minya · *Water*
+- Mann (1945) — *Econometrica* · Sen (1968) — *JASA*
+- Morsy (2023) — Groundwater management, West-West Minya · *Applied Water Science*
+- Shams et al. (2025) — Aquifer degradation 2016–2024, West Mallawi
+- Steduto et al. (2012) — FAO Irrigation and Drainage Paper 66
+- Zwart & Bastiaanssen (2004) — *Agricultural Water Management*
 ---
 
 ## License & Use
