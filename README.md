@@ -6,11 +6,23 @@
 ### West Minya Governorate, Egypt · 2021–2025
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![WaPOR](https://img.shields.io/badge/Data-FAO%20WaPOR%20v3-green)
 ![Sentinel-2](https://img.shields.io/badge/Sentinel--2-AWS%20STAC-orange)
 
 </div>
+
+---
+## Overview
+
+This project implements a complete remote sensing workflow to quantify agricultural expansion, groundwater demand, and biomass water productivity across 166 center-pivot irrigation systems in the West West Minya reclamation zone, Egypt.
+
+The study area is located within one of the Western Desert development zones associated with Egypt’s 1.5 million feddan agricultural expansion initiative, which aims to increase agricultural production in arid regions through large-scale land reclamation and irrigation development.
+
+The region represents one of Egypt’s major desert agricultural expansion zones, where irrigation depends primarily on deep groundwater resources. Recent regional studies have reported notable groundwater level decline and increasing water quality concerns associated with intensive agricultural development in the area.
+
+All analyses were conducted using open satellite data and Python-based geospatial workflows. The project integrates FAO WaPOR datasets, Sentinel-2 imagery, and cloud-native STAC access to monitor seasonal agricultural dynamics, estimate groundwater-related water consumption, and evaluate Biomass Water Productivity (WPb) following FAO WaPOR benchmarking methodology.
+
 
 ---
 
@@ -20,7 +32,8 @@
 
 *West West Minya reclamation zone, West Minya Governorate, Egypt.
 166 center-pivot irrigation systems mapped from Sentinel-2 satellite imagery.
-The cluster relies entirely on the non-renewable Nubian Sandstone Aquifer.
+The cluster draws groundwater from the **Middle Eocene fractured limestone
+aquifer**.
 Basemap: Esri World Imagery.*
 
 ---
