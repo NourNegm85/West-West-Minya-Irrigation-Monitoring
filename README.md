@@ -70,7 +70,7 @@ questions that matter to water resource managers and agricultural investors:
 
 ## How Each Pivot Was Classified
 
-Every pivot received one operational label based on four years of satellite observation.
+Each pivot received an operational label based on four years of satellite observations.
 
 ![Operational Classification Map](figures/spatial_operational_classification.png)
 
@@ -194,19 +194,39 @@ a direct and measurable contribution to that regional depletion trend.
 
 ## Methodology
 
+### Workflow Environment
+
+This project follows a **hybrid cloud-native and local workflow** — a practical
+approach that combines the strengths of cloud computation, open-access data
+platforms, and desktop GIS tools:
+
+| Environment | Role |
+|-------------|------|
+| **Google Colab** (cloud) | All Python-based analysis — WaPOR data download, raster processing, SAVI computation, zonal extraction, water productivity analysis, trend analysis, and figure generation |
+| **AWS Element84 STAC** (cloud) | Cloud-native Sentinel-2 access — streaming only the required pixels over the AOI without full-scene downloads |
+| **ArcGIS Pro 3.4** (local) | Pivot boundary digitizing from Sentinel-2 composites — used for its precision vector editing tools |
+
+The analysis pipeline is fully reproducible from the notebook. ArcGIS Pro was
+used only for the initial polygon digitizing step; all subsequent processing
+is Python-based and platform-independent.
+
+---
+
+### Analysis Steps
+
 | Step | What was done | Tool |
 |------|--------------|------|
 | Pivot boundary mapping | 166 circular fields digitized from Sentinel-2 satellite imagery | ArcGIS Pro 3.4 |
-| WaPOR data download | L3-AETI-D and L3-NPP-D downloaded as dekadal rasters at 20m | FAO WaPOR v3 portal |
-| PCP download and alignment | WaPOR PCP Level 1 (~5km) downloaded and resampled to 20m AETI grid | rioxarray |
+| WaPOR data download | L3-AETI-D and L3-NPP-D downloaded as dekadal rasters at 20m | Python (wapordl / requests) |
+| PCP download and alignment | WaPOR PCP Level 1 (~5km) downloaded and resampled to 20m AETI grid | Python · rioxarray |
 | Seasonal cube construction | Dekadal rasters summed within each November–April window and stacked as NetCDF | xarray · Dask |
 | Sentinel-2 access | Seasonal median composites built from all valid acquisitions within each season window | AWS Element84 STAC — lazy loading |
-| SAVI computation and activity classification | SAVI calculated per season; pivots classified active (median SAVI ≥ 0.3) or inactive | Sentinel-2 Band 4 + Band 8 |
-| Zonal extraction | AETI, NPP, and PCP extracted per pivot per season using −20m negative buffer | rasterstats |
-| Water productivity | Dry matter biomass ÷ water consumed; benchmarked against FAO WaPOR reference range | WaPOR L3 · carbon fraction 0.45 |
+| SAVI computation and masking | SAVI calculated per season at 10m, resampled to 20m; pivots classified active (median SAVI ≥ 0.3) or inactive | Python · Sentinel-2 Band 4 + Band 8 |
+| Zonal extraction | AETI, NPP, and PCP extracted per pivot per season using −20m negative buffer to eliminate mixed edge pixels | rasterstats |
+| Water productivity | Dry matter biomass ÷ water consumed; benchmarked against FAO WaPOR reference range (0.8–1.8 kg/m³) | Python · carbon fraction 0.45 |
 | Demand estimation | Net irrigation requirement → gross aquifer abstraction | FAO-56 · center-pivot η = 0.85 |
-| Trend analysis | Rate of WPb change per pivot over four seasons | Mann-Kendall · Sen's Slope · p < 0.1 disclosed |
-| Operational classification | Five classes assigned from four-season activity patterns | Python |
+| Trend analysis | Sen's Slope computed per pivot across active seasons to identify efficiency trajectories | Mann-Kendall · pymannkendall |
+| Operational classification | Five classes assigned from four-season SAVI activity patterns | Python |
 
 **Satellite data sources:**
 
@@ -215,7 +235,7 @@ a direct and measurable contribution to that regional depletion trend.
 | FAO WaPOR v3 | L3-AETI-D | 20m / 10-day | Actual water consumption |
 | FAO WaPOR v3 | L3-NPP-D | 20m / 10-day | Biomass production |
 | FAO WaPOR | PCP Level 1 | ~5km → aligned to 20m | Precipitation input |
-| Sentinel-2 L2A | Band 4 + Band 8 | 10m | SAVI activity classification |
+| Sentinel-2 L2A | Band 4 + Band 8 | 10m → resampled to 20m | SAVI activity classification |
 
 ---
 ## Limitations
