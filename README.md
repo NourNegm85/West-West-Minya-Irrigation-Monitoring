@@ -214,8 +214,39 @@ and measurable contribution to that depletion trend.
 | Sentinel-2 L2A | Band 4 + Band 8 | 10m  aligned to 20m | SAVI activity classification |
 
 ---
+## Limitations
 
+- **No satellite-based crop classification.** Field knowledge indicates sugar beet
+  as the dominant crop, followed by wheat, clover, and other winter cultivars.
+  WPb values are interpreted in this agronomic context but require field
+  validation for formal reporting.
+
+- **Monitoring window only.** All operational classifications reflect observed
+  activity between November 2021 and April 2025. No pivot history prior to
+  Season 1 is described — a pivot labelled "Expansion (New)" may have operated
+  before the monitoring period.
+
+- **2021/22 seasonal totals are not directly comparable.** The active irrigation
+  window in 2021/22 was 7 dekads (70 days), approximately 30% shorter than the
+  10 dekads (100 days) recorded in all subsequent seasons. AETI and demand
+  figures for that season underestimate full-season consumption.
+
+- **Aquifer depletion not modelled.** This project quantifies seasonal abstraction
+  volumes but does not model drawdown trajectories or long-term depletion rates.
+  That requires hydrogeological field data beyond the scope of satellite monitoring.
+
+- **SAVI threshold sensitivity.** The 0.3 median SAVI threshold may miss
+  low-canopy or early-season crops that fall below the detection limit.
+  A lower threshold would capture more marginal activity at the cost of
+  increased false positives in the desert background.
+
+- **Statistical power of trend analysis.** Mann-Kendall trend analysis was applied
+  across four seasons (n=4). At this sample size, statistical power is inherently
+  low and no pivot reached significance at p < 0.05. Sen's Slope values are
+  reported as directional indicators, not confirmed trends.
 ## Repository Contents
+
+---
 
 ```text
 ├── notebook/          Full analysis — one self-contained notebook
