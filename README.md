@@ -99,26 +99,30 @@ are produced per cubic meter of water consumed. Higher means more efficient.
 
 The FAO WaPOR reference range for irrigated agriculture in arid environments
 is **0.8–1.8 kg/m³**. The West West Minya cluster performs above this range
-on average.
+on average — an outcome consistent with sugar beet cultivation, which produces
+high total dry matter biomass, including storage roots, leaves, and stems.
 
 ![WPb Benchmarking](figures/seasonal_wpb_benchmarking.png)
 
 *Each box shows the spread of water productivity across all active pivots
-in that season. Dashed lines mark the FAO reference range. Not a single
-pivot-season fell below the lower benchmark.*
+in that season. Dashed lines mark the FAO reference range (0.8–1.8 kg/m³).
+Not a single pivot-season fell below the lower benchmark.*
 
 **Why did productivity appear to drop in 2022/23?**
-
 It was not a real drop — it was a dilution effect. Active pivot count doubled
 from 45 to 97 in that season. The 52 newly commissioned fields performed at
-lower efficiency in their first season, which is normal and expected for newly
+lower efficiency in their first season, which is expected for newly
 reclaimed land. By 2023/24 the cluster had largely recovered. This is a
-management signal, not a failure signal.
+maturation signal, not a management failure.
 
-> No satellite-based crop classification performed. Field knowledge indicates
-sugar beet as dominant crop, with wheat, clover, and other winter cultivars
-as secondary. Brackish irrigation water (TDS 2,176–2,912 mg/L) supports
-salt-tolerant crop dominance (Khalil et al., 2024).
+> **Crop context:** No satellite-based crop classification was performed.
+> Field knowledge indicates **sugar beet** (*Beta vulgaris*) as the dominant
+> crop in this cluster, followed by wheat, clover (*Trifolium alexandrinum*),
+> and other winter cultivars. The brackish irrigation water
+> (TDS 2,176–2,912 mg/L) constrains crop selection toward salt-tolerant
+> species, consistent with sugar beet dominance (Khalil et al., 2024).
+> WPb values are interpreted in this agronomic context and require field
+> validation for formal reporting.
 
 ---
 
@@ -145,73 +149,73 @@ Two clear patterns emerge:
 
 *Left panel: water consumption per 10-day period across the November–April
 season (AETI). Right panel: biomass production per 10-day period (NPP).
-Each line is one season. Shaded areas show variability between pivots.*
+Each line is one season. Shaded areas show inter-pivot variability (±1 SD).*
 
 What the curves tell us:
 
 - Water consumption rises steadily through the season, peaking in
   **March–April** as crops reach full canopy and temperatures increase.
-- NPP peaks at dekads 13–16 (March–mid April), consistent with the storage
-  root bulking and canopy maturation of sugar beet — the dominant crop in
-  this cluster — followed by wheat, clover, and other winter cultivars.
-  The brackish irrigation water (TDS 2,176–2,912 mg/L) constrains crop
-  selection toward salt-tolerant species such as sugar beet
-  (Khalil et al., 2024; Steduto et al., 2012).
-- The 2021/22 season starts 30 days later than all other years. This likely
-  reflects mid-season monitoring onset rather than a late planting year.
-  Seasonal totals for 2021/22 are therefore not directly comparable to later
-  seasons.
-- From 2022/23 onward, all three seasons follow nearly identical curve shapes,
-  confirming a stable and consistent crop calendar.
+- Biomass production (NPP) peaks at **dekads 13–16 (March–mid April)**,
+  consistent with the storage root bulking stage of sugar beet and the
+  grain-fill stage of secondary winter cultivars (Steduto et al., 2012).
+- The **2021/22 season starts 30 days later** than all subsequent years
+  (dekad 11 vs. dekad 8). This likely reflects mid-season monitoring onset
+  rather than a late planting year. Seasonal totals for 2021/22 are therefore
+  not directly comparable to later seasons.
+- From **2022/23 onward**, all three seasons follow nearly identical curve
+  shapes — confirming a stable and consistent crop calendar across the cluster.
 
 ---
 
 ## Groundwater Demand — Aquifer Pressure Over Time
 
-| Season | Active Area | Groundwater Extracted |
-|---|---|---|
-| 2021/22 | 2,531 ha | 13.5 MCM |
-| 2022/23 | 5,145 ha | 22.0 MCM |
-| 2023/24 | 4,142 ha | 24.4 MCM |
-| 2024/25 | 5,359 ha | 28.3 MCM |
+| Season  | Active Area | Groundwater Extracted |
+|---------|-------------|----------------------|
+| 2021/22 | 2,531 ha    | 13.5 MCM             |
+| 2022/23 | 5,145 ha    | 22.0 MCM             |
+| 2023/24 | 4,142 ha    | 24.4 MCM             |
+| 2024/25 | 5,359 ha    | 28.3 MCM             |
 
 Demand grew by **110%** over four seasons — driven almost entirely by
 area expansion, not by increased water use per field. Mean water consumption
-per active pivot remained relatively stable.
+per active pivot remained relatively stable across seasons.
 
-The primary water source is the **Middle Eocene fractured limestone aquifer**,
-a confined to semi-confined brackish system (TDS 2,176–2,912 mg/L) under
-accelerating stress. Regional studies document a **5-meter water table decline
-in a single year** (2020–2021) driven by agricultural expansion (Alsayyad
-et al., 2024), and water quality deteriorated from "Good" to "Poor" between
-2016 and 2024 (Shams et al., 2025). The abstraction trajectory documented
-in this project — a 110% demand increase over four seasons — is a direct
-and measurable contribution to that depletion trend.
+The primary water source is the **Middle Eocene fractured limestone aquifer**
+(Samalut and Minia formations, well depths 420–750m), a brackish confined to
+semi-confined system (TDS 2,176–2,912 mg/L) under accelerating stress.
+Regional studies document a **5-meter water table decline in a single year**
+(2020–2021) driven by agricultural expansion in the broader West Minia zone
+(Alsayyad et al., 2024), and water quality deteriorated from "Good" to "Poor"
+between 2016 and 2024 (Shams et al., 2025). The abstraction trajectory
+documented in this project, a 110% demand increase over four seasons is
+a direct and measurable contribution to that regional depletion trend.
 
 ---
 
 ## Methodology
 
 | Step | What was done | Tool |
-|---|---|---|
-| Pivot mapping | 166 circular fields digitized from satellite imagery | ArcGIS Pro 3.4 |
-| Activity classification | Fields classified active or inactive per season | Sentinel-2 SAVI median ≥ 0.3 |
-| Sentinel-2 access | Seasonal median composites built from all valid acquisitions | AWS Element84 STAC — lazy loading |
-| Data extraction | AETI, NPP, PCP extracted per pivot per season | rasterstats · −20m negative buffer |
-| PCP alignment | WaPOR PCP L1 (~5km) resampled to 20m AETI grid | rioxarray |
-| Water productivity | Dry matter biomass ÷ water consumed | WaPOR L3 · carbon fraction 0.45 |
-| Demand estimation | Net irrigation need → gross aquifer abstraction | FAO-56 · center-pivot η = 0.85 |
-| Trend analysis | Rate of WPb change per pivot over four seasons | Mann-Kendall · Sen's Slope |
-| Classification | Five operational classes from four-season activity patterns | Python |
+|------|--------------|------|
+| Pivot boundary mapping | 166 circular fields digitized from Sentinel-2 satellite imagery | ArcGIS Pro 3.4 |
+| WaPOR data download | L3-AETI-D and L3-NPP-D downloaded as dekadal rasters at 20m | FAO WaPOR v3 portal |
+| PCP download and alignment | WaPOR PCP Level 1 (~5km) downloaded and resampled to 20m AETI grid | rioxarray |
+| Seasonal cube construction | Dekadal rasters summed within each November–April window and stacked as NetCDF | xarray · Dask |
+| Sentinel-2 access | Seasonal median composites built from all valid acquisitions within each season window | AWS Element84 STAC — lazy loading |
+| SAVI computation and activity classification | SAVI calculated per season; pivots classified active (median SAVI ≥ 0.3) or inactive | Sentinel-2 Band 4 + Band 8 |
+| Zonal extraction | AETI, NPP, and PCP extracted per pivot per season using −20m negative buffer | rasterstats |
+| Water productivity | Dry matter biomass ÷ water consumed; benchmarked against FAO WaPOR reference range | WaPOR L3 · carbon fraction 0.45 |
+| Demand estimation | Net irrigation requirement → gross aquifer abstraction | FAO-56 · center-pivot η = 0.85 |
+| Trend analysis | Rate of WPb change per pivot over four seasons | Mann-Kendall · Sen's Slope · p < 0.1 disclosed |
+| Operational classification | Five classes assigned from four-season activity patterns | Python |
 
 **Satellite data sources:**
 
 | Source | Product | Native Resolution | Used for |
-|---|---|---|---|
+|--------|---------|------------------|---------|
 | FAO WaPOR v3 | L3-AETI-D | 20m / 10-day | Actual water consumption |
 | FAO WaPOR v3 | L3-NPP-D | 20m / 10-day | Biomass production |
 | FAO WaPOR | PCP Level 1 | ~5km → aligned to 20m | Precipitation input |
-| Sentinel-2 L2A | Band 4 + Band 8 | 10m  aligned to 20m | SAVI activity classification |
+| Sentinel-2 L2A | Band 4 + Band 8 | 10m | SAVI activity classification |
 
 ---
 ## Limitations
