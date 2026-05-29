@@ -119,7 +119,7 @@ maturation signal, not a management failure.
 > Field knowledge indicates **sugar beet** (*Beta vulgaris*) as the dominant
 > crop in this cluster, followed by wheat, clover (*Trifolium alexandrinum*),
 > and other winter cultivars. The brackish irrigation water
-> (TDS 2,176–2,912 mg/L) constrains crop selection toward salt-tolerant
+> (TDS 2,176–2,912 ppm) constrains crop selection toward salt-tolerant
 > species, consistent with sugar beet dominance (Khalil et al., 2024).
 > WPb values are interpreted in this agronomic context and require field
 > validation for formal reporting.
@@ -182,7 +182,7 @@ per active pivot remained relatively stable across seasons.
 
 The primary water source is the **Middle Eocene fractured limestone aquifer**
 (Samalut and Minia formations, well depths 420–750m), a brackish confined to
-semi-confined system (TDS 2,176–2,912 mg/L) under accelerating stress.
+semi-confined system (TDS 2,176–2,912 ppm) under accelerating stress.
 Regional studies document a **5-meter water table decline in a single year**
 (2020–2021) driven by agricultural expansion in the broader West Minia zone
 (Alsayyad et al., 2024), and water quality deteriorated from "Good" to "Poor"
