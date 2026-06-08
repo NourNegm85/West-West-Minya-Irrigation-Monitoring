@@ -238,6 +238,16 @@ is Python-based and platform-independent.
 | Sentinel-2 L2A | Band 4 + Band 8 | 10m → resampled to 20m | SAVI activity classification |
 
 ---
+
+## Public Repository Note
+
+This repository presents a portfolio version of the project designed to showcase the analytical framework, geospatial workflows, and resulting insights.
+
+Certain processing routines, classification criteria, calibration steps, and intermediate calculations have been generalized or omitted in the public release. These modifications do not affect the interpretation of the results but help keep the repository focused on the project's concepts, methodology, and outcomes rather than implementation details.
+
+The figures, maps, statistics, and conclusions presented remain representative of the original analysis.
+
+---
 ## Limitations
 
 - **No satellite-based crop classification.** Field knowledge indicates sugar beet
